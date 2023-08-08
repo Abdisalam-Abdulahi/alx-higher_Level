@@ -11,12 +11,17 @@
 
 int check_cycle(listint_t *list)
 {
-		listint_t *current = list;
+		listint_t *low = list;
+		listint_t *high = list;
 
-		while (current != NULL)
+		if (list == NULL)
+			return (0);
+
+		while (low && high && high->next)
 		{
-			current = current->next;
-			if (current == list)
+			low = low->next;
+			high = high->next->next;
+			if (low == high)
 				return (1);
 		}
 		return (0);

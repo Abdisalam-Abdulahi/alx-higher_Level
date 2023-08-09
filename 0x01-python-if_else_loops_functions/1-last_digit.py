@@ -6,9 +6,16 @@ num_str = repr(number)
 last_digit = num_str[-1]
 last_digit = int(last_digit)
 '''
+check = 0
+if number < 0:
+    number *= -1
+    check = 1
+
 last_digit = number % 10
-if (number < 0):
-    last_digit = last_digit * -1
+if check == 1:
+    number *= -1
+    last_digit *= -1
+
 
 print(f"Last digit of {number} is {last_digit}", end=" ")
 if last_digit > 5:

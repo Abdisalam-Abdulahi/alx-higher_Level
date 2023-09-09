@@ -1,0 +1,36 @@
+"""
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(2, 3)
+5
+
+>>> add_integer(5.0, 10.5)
+15
+
+>>> add_integer(-7, -7)
+-14
+
+
+>>> add_integer(-7, 7)
+0
+
+>>> add_integer(-2.9, 3.89)
+0
+
+
+>>> add_integer(-1000, -10.4)
+-1010
+
+
+>>> add_integer(23, "som")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+
+>>> add_integer("som", 15)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+"""

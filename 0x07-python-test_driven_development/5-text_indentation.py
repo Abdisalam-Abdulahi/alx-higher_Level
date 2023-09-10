@@ -10,6 +10,7 @@ def text_indentation(text):
     print 2 new lines after ?, ., :
     '''
     check = True
+    i = 0
     if type(text) is not str:
         raise TypeError("text must be a string")
 
@@ -21,6 +22,7 @@ def text_indentation(text):
         else:
             if check:
                 print(lett, end="")
-            else:
+            elif text[i + 1] != " ":
                 print(lett.strip(), end="")
                 check = True
+        i += 1

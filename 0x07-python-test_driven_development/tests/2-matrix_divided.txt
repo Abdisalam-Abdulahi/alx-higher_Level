@@ -42,9 +42,9 @@ Traceback (most recent call last):
     ...
 ZeroDivisionError: division by zero
 
->>> matrix = [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+>>> matrix = [[100, 100, 100], [100, 100, 100]]
 
->>> matrix_dividedr(matrix, 3)
+>>> matrix_dividedr(matrix, 100000)
 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
 >>> matrix_dividedr()

@@ -59,5 +59,5 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
-            return(str((lambda x: x * self.__width + "\n")("#")
-                       * self.__height).strip("\n"))
+            return (str((lambda x: x * self.__width + "\n")("#")
+                        * self.__height).strip("\n"))

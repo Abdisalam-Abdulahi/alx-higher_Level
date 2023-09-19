@@ -15,4 +15,46 @@ test print_sorted function
 [1, 2, 3, 4, 5]
 
 
+>>> new = MyList()
+>>> new.print_sorted()
+[]
+
+
+>>> new2 = MyList()
+>>> new2.append("cali")
+>>> new2.append("caasho")
+>>> new2.print_sorted()
+['caasho', 'cali']
+
+>>> new3 = MyList()
+>>> new3.append("cali")
+>>> new3.append("caasho")
+>>> new3.append(2)
+>>> new3.print_sorted()
+Traceback (most recent call last):
+    ...
+TypeError: '<' not supported between instances of 'int' and 'str'
+
+
+>>> new4 = MyList()
+>>> new4.append(-2)
+>>> new4.append(-5)
+>>> new4.append(-10)
+>>> new4.print_sorted()
+[-10, -5, -2]
+
+>>> new5 = MyList()
+>>> new5.append(9)
+>>> new5.append(100)
+>>> new5.append(120)
+>>> new5.append(0)
+>>> new5
+[9, 100, 120, 0]
+
+>>> new5.print_sorted()
+[0, 9, 100, 120]
+
+>>> new5
+[9, 100, 120, 0]
+
 '''

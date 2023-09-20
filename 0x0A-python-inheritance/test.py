@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-Rectangle = __import__('8-rectangle').Rectangle
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Square = __import__('10-square').Square
 
-print(issubclass(Rectangle, BaseGeometry))
+try:
+    s = Square("13")
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
